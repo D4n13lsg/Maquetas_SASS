@@ -1,0 +1,60 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "otros/variables";
+@import "otros/mixins";
+
+h1 {
+    background-color: $color-primario;
+    color: $color-secundario;
+    font-family: $tipografia-alternativa;
+    font-size: $fuente-grande;
+    padding: $espaciado-estandar;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+@include media-breakpoint-up(xs) { 
+  .cont1, .cont3, .cont2, .cont4, .cont5, .cont6{
+    @include contenido-largo(3);
+    background-color: $color-contenido-xs;
+  }
+ }
+@include media-breakpoint-up(sm) { 
+  .cont2 {
+    @include contenido-largo(3);
+    background-color: $color-contenido-sm;
+  }
+ }
+@include media-breakpoint-up(md) { 
+  .cont3, .cont4 {
+    @include contenido-largo(3);
+    background-color: $color-contenido-md;
+  }
+ }
+ @include media-breakpoint-up(lg) { 
+  .cont4 {
+    @include contenido-largo(3);
+    background-color: $color-contenido-lg;
+  }
+ }
+ @include media-breakpoint-up(lg) { 
+  .cont5 {
+    @include contenido-largo(3);
+    background-color: $color-contenido-lg;
+  }
+ }
+ @include media-breakpoint-up(lg) { 
+  .cont6 {
+    @include contenido-largo(3);
+    background-color: $color-contenido-lg;
+  }
+ }

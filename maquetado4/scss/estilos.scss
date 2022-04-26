@@ -1,0 +1,134 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "otros/variables";
+@import "otros/mixins";
+
+h1 {
+    background-color: $color-primario;
+    color: $color-secundario;
+    font-family: $tipografia-alternativa;
+    font-size: $fuente-grande;
+    padding: $espaciado-estandar;
+    text-transform: uppercase;
+    border-radius: 12px;
+}
+
+@include media-breakpoint-up(xs) { 
+  .cont1 {
+    @include contenido-largo(1);
+    background-color: $color-contenido-xs;
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont2 {
+    @include contenido-largo(1);
+    background-color: rgb(209, 221, 44);
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont3 {
+    @include contenido-largo(1);
+    background-color: rgb(68, 0, 255);
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont4 {
+    @include contenido-largo(1);
+    background-color: rgb(255, 0, 212);
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont5 {
+    @include contenido-largo(1);
+    background-color: cyan;
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont6 {
+    @include contenido-largo(1);
+    background-color: rgb(17, 128, 26);
+  }
+ }
+ @include media-breakpoint-up(xs) { 
+  .cont7 {
+    @include contenido-largo(1);
+    background-color: rgb(255, 217, 0);
+  }
+ }
+
+@include media-breakpoint-up(sm) { 
+  .cont2 {
+    @include contenido-largo(5);
+    background-color: $color-contenido-sm;
+  }
+ }
+
+@include media-breakpoint-up(sm) { 
+  .cont3 {
+    @include contenido-largo(2);
+    background-color: chocolate;
+  }
+ }
+ @include media-breakpoint-up(sm) {
+  .cont4 {
+     @include contenido-largo(1);
+     background-color: rgb(207, 160, 4);
+   }
+ }
+ @include media-breakpoint-up(sm) {
+  .cont5 {
+     @include contenido-largo(1);
+     background-color: rgb(85, 207, 4);
+   }
+ }
+ @include media-breakpoint-up(sm) {
+  .cont6 {
+     @include contenido-largo(1);
+     background-color: rgb(19, 67, 170);
+   }
+ }
+ @include media-breakpoint-up(sm) {
+  .cont7 {
+     @include contenido-largo(2);
+     background-color: rgb(207, 4, 122);
+   }
+ }
+ @include media-breakpoint-up(lg) {
+  .cont4{
+     @include contenido-largo(2);
+     background-color: $color-contenido-lg;
+   }
+ }
+ @include media-breakpoint-up(lg) {
+  .cont5 {
+    @include contenido-largo(2);
+    background-color: $color-contenido-lg;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .cont6 {
+    @include contenido-largo(2);
+    background-color: rgb(14, 250, 199);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .cont7 {
+    @include contenido-largo(2);
+    background-color: rgb(60, 255, 0);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .cont2 {
+    @include contenido-largo(8);
+    background-color: rgb(68, 0, 255);
+  }
+}
